@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Links to CSS-->
+    <meta charset="utf-8" />
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <title>Slice of Heaven</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <!--Headings and logo-->
+        <h1>SLICE OF HEAVEN &#128516;</h1>
+        <p>In Pizza we Crust</p>
+      </div>
+    </div>
+    <nav class="navbar navbar-expand-md fixed-top">
+      <div class="container">
+        <div class="collapse navbar-collapse" id="collapse_target">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <div class="initially-hidden">
+                <a class="nav-link" href="#about"
+                  ><span class="clickable">About Us</span></a
+                >
+              </div>
+            </li>
+            <li class="nav-item">
+              <div class="initially-hidden">
+                <a class="nav-link" href="#contact"
+                  ><span class="clickable">Contact Us</span></a
+                >
+              </div>
+            </li>
+            <li id="delivery-button">
+              <button
+                onclick="window.location.href = 'order.html';"
+                id="delivery"
+                class="btn delivery-btn"
+              >
+                DELIVERY
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <br />
+    <!-- Images container -->
+    <div class="images">
+      <div class="initially-showing" id="about">
+        <div class="container">
+          <div class="jumbotron">
+            <h3>ABOUT US.</h3>
+            <p>
+              We started hosting pizza nights out, on the terrace of a small
+              building in the suburb town of Ngong in 2012. Lured by freshly
+              made pies featuring tomatoes, peppers, onions, and basil from his
+              family's one-acre garden—as well as hand-crafted dough and meats
+              of pastured cows from local Masaai butchers, visitors to the Slice
+              of Heaven were seeking out both dinner and an experience.
+              Traveling upwards of two hours from Nairobi to eat pizza (whilst
+              Ngong-road was unbearably narrow & riddled with traffic back
+              then), most never complained.
+            </p>
+            <p>
+              It’s not just a meal, it’s a destination.People come here to relax
+              and enjoy the setting, not to grab a meal and run.
+            </p>
+            <p>
+              When the sun sets behind the scenic Ngong Hills, the light bathes
+              everything in beautiful magenta tones, you cannot admire the
+              breathtaking spectacle whilst indulging in the restaurant's
+              mouth-watering highlights and fail to feel the strong life force
+              energy.
+            </p>
+            <p>
+              The white-settler community and the tourists loved it, the locals
+              made it popular, fast-forward nine years later and the
+              restaurant's 7 branches bake 300 pizzas in four hours.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="initially-showing" id="contact">
+        <div class="container">
+          <div class="jumbotron">
+            <h3>CONTACT US.</h3>
+            <p>
+              We value your feedback. For an
+              inquiries,complaints,comments,please feel free to reach out to us.
+            </p>
+            <br />
+            <p><strong>Telephone:</strong></p>
+            0712987356
+            <br />
+            <p><strong>Email:</strong></p>
+            sliceofheaven@gmail.com
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--details-->
+    <div class="card-footer details">
+      <div class="col-md-12">
+        <div class="row about-us">
+          <div class="col-md-4">
+            <div class="container timings-section">
+              <h4>OPENING HOURS</h4>
+              <h6>Sunday-Thursday</h6>
+              <p>11:00am-10:00pm</p>
+              <br />
+              <h6>Friday-Saturday</h6>
+              <p>11:00am-11:00pm</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="container subscribe-section">
+              <h4>Email Address*</h4>
+              <label for="email"
+                >Subscribe to receive news and alerts from us.</label
+              >
+              <br />
+              <input
+                type="text"
+                id="email"
+                name="email"
+                placeholder=""
+                required
+              />
+              <br />
+              <input type="submit" value="Submit" onclick="output()" />
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="container contact-section">
+              <h4>CONTACT</h4>
+              <h6>Telephone:</h6>
+              0712567921
+              <br />
+              <h6>P.O.Box 23315-0100</h6>
+              Nairobi,Kenya
+              <br />
+              <p>info@pizzaplace.co.ke</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
